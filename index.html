@@ -286,6 +286,8 @@ a{text-decoration:none; color:inherit;}
   /* Reduce text width so image dominates */
   .hero-left{
     max-width:65%;
+    display:flex;
+    flex-direction:column;
   }
 
 }
@@ -337,6 +339,10 @@ a{text-decoration:none; color:inherit;}
     box-shadow:0 10px 35px rgba(37,211,102,0.35);
   }
 }
+.hero-left .cta-primary{
+  align-self:center;   /* 👈 centers horizontally */
+  margin-top:12px;
+}
 
 </style>
 </head>
@@ -347,7 +353,10 @@ a{text-decoration:none; color:inherit;}
 
 <header class="hero-header">
   <div class="logo-wrap"><img src="logo.png"></div>
-  <button class="btn-ghost">GET ID !</button>
+  <a class="btn-ghost" href="https://wa.link/reddybookdemo" target="_blank">
+    GET ID !
+  </a>
+
 </header>
 
 <section class="hero">
